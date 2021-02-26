@@ -46,7 +46,117 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import rcuteRIcon from './rcute/r.png';
+import rcuteEyeExt from './rcute/eyeExt.png';
+import rcuteMicExt from './rcute/micExt.png';
+import rcuteCozmarsExt from './rcute/cozmarsExt.png';
+import rcuteCubeExt from './rcute/cubeExt.png';
+import rcuteCubeIcon from './rcute/cube.png';
+import rcuteCozmarsIcon from './rcute/cozmars.png';
+import rcuteCubeSmallIcon from './rcute/cubeSmall.png';
+import rcuteCozmarsSmallIcon from './rcute/cozmarsSmall.png';
+
 export default [
+    {
+        name: 'Cozmars',
+        extensionId: 'rcuteCozmars',
+        collaborator: 'R-Cute',
+        iconURL: rcuteCozmarsExt,
+        insetIconURL: rcuteRIcon,
+        description: (
+            <FormattedMessage
+                defaultMessage="智能编程机器人"
+                description="Description for the rcuteCozmars extension"
+                id="gui.extension.rcuteCozmars.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: rcuteCozmarsIcon,
+        connectionSmallIconURL: rcuteCozmarsSmallIcon,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="连接 Cozmars 机器人"
+                description="Message to help people connect to their rcute-cozmars."
+                id="gui.extension.rcuteCozmars.connectingMessage"
+            />
+        ),
+        helpLink: 'https://rcute-cozmars.readthedocs.io'
+    },
+    {
+        name: '魔方',
+        extensionId: 'rcuteCube',
+        collaborator: 'R-Cute',
+        iconURL: rcuteCubeExt,
+        insetIconURL: rcuteRIcon,
+        description: (
+            <FormattedMessage
+                defaultMessage="Cozmars 的玩伴，具有多种动作识别功能"
+                description="Description for the rcuteCube extension"
+                id="gui.extension.rcuteCube.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: rcuteCubeIcon,
+        connectionSmallIconURL: rcuteCubeSmallIcon,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="连接 Cozmars 魔方"
+                description="Message to help people connect to their rcute-cube."
+                id="gui.extension.rcuteCube.connectingMessage"
+            />
+        ),
+        helpLink: 'https://rcute-cozmars.readthedocs.io'
+    },
+    {
+        name: 'R-Cute 视觉',
+        extensionId: 'rcuteAiVision',
+        collaborator: 'R-Cute',
+        iconURL: rcuteEyeExt,
+        insetIconURL: rcuteRIcon,
+        description: (
+            <FormattedMessage
+                defaultMessage="辅助 R-Cute 机器人进行图像识别"
+                description="Description for the rcuteAiVision extension"
+                id="gui.extension.rcuteAiVision.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        helpLink: 'https://rcute-scratch.readthedocs.io'
+    },
+    {
+        name: 'R-Cute 语音',
+        extensionId: 'rcuteAiAudio',
+        collaborator: 'R-Cute',
+        iconURL: rcuteMicExt,
+        insetIconURL: rcuteRIcon,
+        description: (
+            <FormattedMessage
+                defaultMessage="辅助 R-Cute 机器人进行语音识别"
+                description="Description for the rcuteAiAudio extension"
+                id="gui.extension.rcuteAiAudio.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        helpLink: 'https://rcute-scratch.readthedocs.io'
+    },
     {
         name: (
             <FormattedMessage
