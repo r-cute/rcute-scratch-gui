@@ -118,7 +118,7 @@ export default [
         helpLink: 'https://rcute-cozmars.readthedocs.io'
     },
     {
-        name: 'R-Cute 视觉',
+        name: '机器视觉',
         extensionId: 'rcuteAiVision',
         collaborator: 'R-Cute',
         iconURL: rcuteEyeExt,
@@ -138,7 +138,7 @@ export default [
         helpLink: 'https://rcute-scratch.readthedocs.io'
     },
     {
-        name: 'R-Cute 语音',
+        name: '机器语音',
         extensionId: 'rcuteAiAudio',
         collaborator: 'R-Cute',
         iconURL: rcuteMicExt,
