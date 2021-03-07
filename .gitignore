@@ -17,3 +17,4 @@ npm-*
 # Generated translation files
 /translations
 /locale
+yarn-error.log
