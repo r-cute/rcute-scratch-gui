@@ -87,7 +87,7 @@ export default [
         ),
         helpLink: 'https://rcute-cozmars.readthedocs.io'
     },
-    {
+    /*{
         name: '魔方',
         extensionId: 'rcuteCube',
         collaborator: 'R-Cute',
@@ -116,7 +116,7 @@ export default [
             />
         ),
         helpLink: 'https://rcute-cozmars.readthedocs.io'
-    },
+    },*/
     {
         name: '机器视觉',
         extensionId: 'rcuteAiVision',
